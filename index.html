@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+        <h2>Sign in</h2>
+        <input type="text" id="login-username" placeholder="Email, phone, or Skype">
+        <input type="password" id="login-password" placeholder="Password">
+        <a href="#" onclick="showRegister()">No account? Create one!</a>
+        <a href="#">Can't access your account?</a>
+        <div>
+            <button onclick="goBack()">Back</button>
+            <button onclick="login()">Next</button>
+        </div>
+    </div>
+
+    <div class="container" id="register-container" style="display: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+        <h2>Create account</h2>
+        <input type="text" id="register-username" placeholder="Email">
+        <input type="password" id="register-password" placeholder="Password">
+        <div>
+            <button onclick="showLogin()">Back</button>
+            <button onclick="register()">Register</button>
+        </div>
+    </div>
+
+    <div class="container" id="verify-container" style="display: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+        <h2>Verify your email</h2>
+        <input type="text" id="verification-code" placeholder="Verification Code">
+        <div>
+            <button onclick="showRegister()">Back</button>
+            <button onclick="verifyCode()">Verify</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
